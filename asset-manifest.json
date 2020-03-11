@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/reviewsapp/static/css/main.bbe4f3e0.chunk.css",
-    "main.js": "/reviewsapp/static/js/main.a2cac1c9.chunk.js",
-    "main.js.map": "/reviewsapp/static/js/main.a2cac1c9.chunk.js.map",
+    "main.js": "/reviewsapp/static/js/main.04540998.chunk.js",
+    "main.js.map": "/reviewsapp/static/js/main.04540998.chunk.js.map",
     "runtime-main.js": "/reviewsapp/static/js/runtime-main.08ad6206.js",
     "runtime-main.js.map": "/reviewsapp/static/js/runtime-main.08ad6206.js.map",
     "static/js/2.1f38468b.chunk.js": "/reviewsapp/static/js/2.1f38468b.chunk.js",
     "static/js/2.1f38468b.chunk.js.map": "/reviewsapp/static/js/2.1f38468b.chunk.js.map",
     "index.html": "/reviewsapp/index.html",
-    "precache-manifest.4d271ef0e1aa18c23c069e83248c15a8.js": "/reviewsapp/precache-manifest.4d271ef0e1aa18c23c069e83248c15a8.js",
+    "precache-manifest.8660b361aa84d3b689d57333066932cc.js": "/reviewsapp/precache-manifest.8660b361aa84d3b689d57333066932cc.js",
     "service-worker.js": "/reviewsapp/service-worker.js",
     "static/css/main.bbe4f3e0.chunk.css.map": "/reviewsapp/static/css/main.bbe4f3e0.chunk.css.map",
     "static/js/2.1f38468b.chunk.js.LICENSE.txt": "/reviewsapp/static/js/2.1f38468b.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.08ad6206.js",
     "static/js/2.1f38468b.chunk.js",
     "static/css/main.bbe4f3e0.chunk.css",
-    "static/js/main.a2cac1c9.chunk.js"
+    "static/js/main.04540998.chunk.js"
   ]
 }
