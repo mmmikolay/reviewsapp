@@ -28,7 +28,7 @@
     "react-vertical-timeline-component": "^2.5.0",
     "react-web-vector-icons": "^1.0.2"
   },
-  "homepage": "https://mmmikolay.github.io/reviewsapp",
+  "homepage": "https://mmmikolay.github.io/reviewsapp/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
