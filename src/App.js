@@ -59,33 +59,35 @@ const App = () => {
 
   return (
       <>
-      <ApolloProvider client={client}>
-        <Router>
-          <ScrollToTop />
-          <Switch>
-            <Route path ="/book/details/:bookid" component = {BookDetails}/>
-            <Route path ="/movie/details/:movieid" component = {MovieDetails}/>
-            <Route path ="/game/details/:gameid" component = {GameDetails}/>
+      <div id="max-width-wrapper">
+        <ApolloProvider client={client}>
+          <Router>
+            <ScrollToTop />
+            <Switch>
+              <Route path ="/book/details/:bookid" component = {BookDetails}/>
+              <Route path ="/movie/details/:movieid" component = {MovieDetails}/>
+              <Route path ="/game/details/:gameid" component = {GameDetails}/>
 
-            <Route exact path ="/add_author" component = {AddAuthor}/>
-            <Route exact path ="/add_book" component = {AddBook}/>
-            <Route exact path ="/add_director" component = {AddDirector}/>
-            <Route exact path ="/add_movie" component = {AddMovie}/>
-            <Route exact path ="/add_studio" component = {AddStudio}/>
-            <Route exact path ="/add_game" component = {AddGame}/>
+              <Route exact path ="/add_author" component = {AddAuthor}/>
+              <Route exact path ="/add_book" component = {AddBook}/>
+              <Route exact path ="/add_director" component = {AddDirector}/>
+              <Route exact path ="/add_movie" component = {AddMovie}/>
+              <Route exact path ="/add_studio" component = {AddStudio}/>
+              <Route exact path ="/add_game" component = {AddGame}/>
 
-            <Route exact path ="/books" component = {Books}/>
-            <Route exact path ="/movies" component = {Movies}/>
-            <Route exact path ="/games" component = {Games}/>
+              <Route exact path ="/books" component = {Books}/>
+              <Route exact path ="/movies" component = {Movies}/>
+              <Route exact path ="/games" component = {Games}/>
 
-            <Route exact path ="/about" component = {About}/>            
-            <Route exact path ="/contact" component = {Contact}/>
-            <Route exact path ="/thanks" component = {SpecialThanks}/>
+              <Route exact path ="/about" component = {About}/>            
+              <Route exact path ="/contact" component = {Contact}/>
+              <Route exact path ="/thanks" component = {SpecialThanks}/>
 
-            <Route exact path="/" component = {MainMenu}></Route>
-          </Switch>
-        </Router>  
-      </ApolloProvider>   
+              <Route exact path="/" component = {MainMenu}></Route>
+            </Switch>
+          </Router>  
+        </ApolloProvider>   
+      </div>
       </>
   )
 }
