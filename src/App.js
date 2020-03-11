@@ -61,7 +61,7 @@ const App = () => {
       <>
       <div id="max-width-wrapper">
         <ApolloProvider client={client}>
-          <Router>
+          <Router basename="https://mmmikolay.github.io/reviewsapp">
             <ScrollToTop />
             <Switch>
               <Route path ="/book/details/:bookid" component = {BookDetails}/>
