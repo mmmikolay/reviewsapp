@@ -3,9 +3,6 @@ import React from 'react';
 //STYLES
 import './contactmap.css';
 
-import MapImage from './Map.png';
-import  GMapsIcon  from './GMapsIcon';
-
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 
@@ -36,18 +33,10 @@ const ContactMap = ({ google }) => {
     </p>
     </div>
 
-        
-        {/* <div className="map-container">
-            <img src={MapImage} alt="My Location"/>
-            <p>This is where I live. At first, I considered placing a real map view here, but styling turned out to be a hell of an ordeal. So, you have to do with a plain image that I got from Google Maps.</p>
-        </div>  */}
     </>
     );
 };
 
-// export default ContactMap;
 export default GoogleApiWrapper(({
     apiKey: (process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
 }))(ContactMap);
-
-// AIzaSyBosZzGGGXj2iEk_WPRmLs7zFPyfHhyQZA
