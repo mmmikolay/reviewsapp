@@ -47,7 +47,7 @@ const ContactMap = ({ google }) => {
 
 // export default ContactMap;
 export default GoogleApiWrapper(({
-    apiKey: ("AIzaSyBosZzGGGXj2iEk_WPRmLs7zFPyfHhyQZA")
+    apiKey: (process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
 }))(ContactMap);
 
 // AIzaSyBosZzGGGXj2iEk_WPRmLs7zFPyfHhyQZA
