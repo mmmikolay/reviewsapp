@@ -17,12 +17,12 @@ import BookDetails from './pages/Details/BookDetails';
 import MovieDetails from './pages/Details/MovieDetails';
 import GameDetails from './pages/Details/GameDetails';
 
-import AddAuthor from './pages/AddAuthor/AddAuthor';
-import AddBook from './pages/AddBook/AddBook';
-import AddDirector from './pages/AddDirector/AddDirector';
-import AddMovie from './pages/AddMovie/AddMovie';
-import AddStudio from './pages/AddStudio/AddStudio';
-import AddGame from './pages/AddGame/AddGame';
+import AddAuthor from './pages/Forms/AddAuthor';
+import AddBook from './pages/Forms/AddBook';
+import AddDirector from './pages/Forms/AddDirector';
+import AddMovie from './pages/Forms/AddMovie';
+import AddStudio from './pages/Forms/AddStudio';
+import AddGame from './pages/Forms/AddGame';
 
 import Books from './pages/Books/Books';
 import Movies from './pages/Movies/Movies';
@@ -61,7 +61,7 @@ const App = () => {
       <>
       <div id="max-width-wrapper">
         <ApolloProvider client={client}>
-          <Router basename={`${process.env.PUBLIC_URL}`}>
+          <Router basename={`${process.env.PUBLIC_URL}/`}>
             <ScrollToTop />
             <Switch>
               <Route path ="/book/details/:bookid" component = {BookDetails}/>

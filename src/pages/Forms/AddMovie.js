@@ -5,7 +5,7 @@ import { GET_DIRECTORS, ADD_MOVIE, GET_MOVIES } from '../../queries/queries';
 import { useHistory } from 'react-router-dom';
 
 //STYLES
-import './addmovie.css';
+import './forms.css';
 
 
 const AddMovie = () => {
@@ -63,8 +63,8 @@ const AddMovie = () => {
 
     return (
         <>
-        <div className="add-book-container">
-            <form className="add-book" >
+        <div className="add-item-container">
+            <form className="add-item" >
 
                 <div className="field">
                     <label>Movie name:</label>
@@ -122,10 +122,10 @@ const AddMovie = () => {
                         <option>Select director</option>
                         {displayDirectors()}
                     </select>
-                    <button className= "new-author"onClick={handleClick}>+</button>
+                    <button className= "new-producer"onClick={handleClick}>+</button>
                 </div>
 
-                <button className= "add-book-button" onClick={submitForm}>+</button>
+                <button className= "add-item-button" onClick={submitForm}>+</button>
             </form>
         </div>
         </>

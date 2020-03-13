@@ -1,61 +1,61 @@
-/* FORMS */
-
-/* FORM add-book */
-.add-book-container {
+.add-item-container {
     margin: 0px;
-    background-color: royalblue;
+    background-color: var(--gray-lightest);
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-.add-book {
+.add-item {
     margin: auto;
-    background-color: navajowhite ;
+    background-color: var(--turquoise-darker) ;
     padding: 10px 10px 10px;
     width: 80%;
     min-width: 270px;
     max-width: 540px;
     height:auto;
-    border-radius: 2%;
+    border-radius: 12px;
     display: block;
     box-sizing: border-box;
 }
 
-.add-book .field{
+.add-item .field,.field-select{
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0px;
-    text-align: center;
-}
-.add-book .field-select{
-    display: grid;
-    grid-template-columns: min-content auto min-content;
     grid-gap: 0px;
     text-align: center;
 }
 
-.add-book label {
+.add-item .field {
+    grid-template-rows: 1fr 1fr;
+}
+.add-item .field-select{
+    grid-template-columns: min-content auto min-content;
+}
+
+.add-item label {
     text-align: start;
     font-size: smaller;
     padding: 6px 6px 0px;
     margin: 6px 6px 0px;
     font-weight: bolder;
+    color: var(--gray-darkest);
+    text-shadow: 0.3px 0.3px var(--gray);
 }
 /* FORMS END*/
 
 
 /* BUTTONS */
-.add-book-button {
+.add-item-button {
+    width: 40px;
+    height: 40px;
     font-size:2em;
     padding: 0 10px;
-    border-radius: 50%;
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 0.2em;
+    left: 0.2em;
 }
 
-.new-author {
+.new-producer {
     height: 30px;
     width: 30px;
     font-size:1em;
@@ -68,4 +68,8 @@
 }
 /* BUTTONS END*/
 
-
+@media screen and (max-width: 675px){
+    .add-item-button {
+        position: relative;
+    }
+}

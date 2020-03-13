@@ -5,7 +5,7 @@ import { GET_AUTHORS, ADD_BOOK, GET_BOOKS } from '../../queries/queries';
 import { useHistory } from 'react-router-dom';
 
 //STYLES
-import './addbook.css';
+import './forms.css';
 
 
 const AddBook = () => {
@@ -61,8 +61,8 @@ const AddBook = () => {
 
     return (
         <>
-        <div className="add-book-container">
-            <form className="add-book" >
+        <div className="add-item-container">
+            <form className="add-item" >
 
                 <div className="field">
                     <label>Book name:</label>
@@ -113,10 +113,10 @@ const AddBook = () => {
                         <option>Select author</option>
                         {displayAuthors()}
                     </select>
-                    <button className= "new-author"onClick={handleClick}>+</button>
+                    <button className= "new-producer"onClick={handleClick}>+</button>
                 </div>
 
-                <button className= "add-book-button" onClick={submitForm}>+</button>
+                <button className= "add-item-button" onClick={submitForm}>+</button>
             </form>
         </div>
         </>

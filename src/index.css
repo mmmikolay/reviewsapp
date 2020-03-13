@@ -89,18 +89,27 @@ body{
 }
 
 form input, form select {
-    margin:  0px 10px 5px;
+    margin:  0px 10px 10px;
     padding: 6px;
     box-sizing: border-box;
     float: left;
-    border-radius: 5%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
+
+
 
 button {
     color: var(--gray-lightest);
-    background: var(--pink);
-    border:0;
+    background: var(--blue-light);
     cursor: pointer;
+    border:0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    transform: scale(106%);
 }
 
 #max-width-wrapper {

@@ -5,7 +5,7 @@ import { GET_STUDIOS, ADD_GAME, GET_GAMES } from '../../queries/queries';
 import { useHistory } from 'react-router-dom';
 
 //STYLES
-import './addgame.css';
+import './forms.css';
 
 
 const AddGame = () => {
@@ -61,8 +61,8 @@ const AddGame = () => {
 
     return (
         <>
-        <div className="add-book-container">
-            <form className="add-book" >
+        <div className="add-item-container">
+            <form className="add-item" >
 
                 <div className="field">
                     <label>Game name:</label>
@@ -113,10 +113,10 @@ const AddGame = () => {
                         <option>Select studio</option>
                         {displayStudios()}
                     </select>
-                    <button className= "new-author"onClick={handleClick}>+</button>
+                    <button className= "new-producer"onClick={handleClick}>+</button>
                 </div>
 
-                <button className= "add-book-button" onClick={submitForm}>+</button>
+                <button className= "add-item-button" onClick={submitForm}>+</button>
             </form>
         </div>
         </>

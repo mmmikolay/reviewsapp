@@ -3,7 +3,7 @@ import { useQuery, useMutation } from '@apollo/react-hooks';
 import { ADD_STUDIO, GET_STUDIOS } from '../../queries/queries';
 
 //STYLES
-import './addstudio.css';
+import './forms.css';
 
 import { useHistory } from 'react-router-dom';
 
@@ -45,8 +45,8 @@ const AddStudio = () => {
 
     return (
         <>
-        <div className="add-author-container">
-            <form id="add-author">
+        <div className="add-item-container">
+            <form className="add-item">
 
                 <div className="field">
                     <label>Name of the Studio:</label>
@@ -72,7 +72,7 @@ const AddStudio = () => {
                     })}/>
                 </div>
             </form>
-            <button className="add-author" onClick={submitForm}>+</button>
+            <button className="add-item-button" onClick={submitForm}>+</button>
         </div>
    
 

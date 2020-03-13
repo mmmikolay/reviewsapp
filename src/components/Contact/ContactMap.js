@@ -14,7 +14,7 @@ const ContactMap = ({ google }) => {
 
     return (
     <>
-    <div className="map-box-container">
+    <div className="map-container">
     <div className="map-box">
         <Map
             google={google}
