@@ -13,6 +13,8 @@ import {
 } from 'react-router-dom';
 //PAGES
 
+import AdminPanel from './pages/Admin/AdminPanel';
+
 import BookDetails from './pages/Details/BookDetails';
 import MovieDetails from './pages/Details/MovieDetails';
 import GameDetails from './pages/Details/GameDetails';
@@ -64,7 +66,7 @@ const App = () => {
           <Router basename={`${process.env.PUBLIC_URL}/`}>
             <ScrollToTop />
             <Switch>
-              <Route path ="/book/details/:bookid" component = {BookDetails}/>
+              <Route path ="/:item/details/:bookid" component = {BookDetails}/>
               <Route path ="/movie/details/:movieid" component = {MovieDetails}/>
               <Route path ="/game/details/:gameid" component = {GameDetails}/>
 
@@ -82,6 +84,8 @@ const App = () => {
               <Route exact path ="/about" component = {About}/>            
               <Route exact path ="/contact" component = {Contact}/>
               <Route exact path ="/thanks" component = {SpecialThanks}/>
+
+              <Route exact path ="/siteadminpanel" component = {AdminPanel}/>
 
               <Route exact path="/" component = {MainMenu}></Route>
             </Switch>

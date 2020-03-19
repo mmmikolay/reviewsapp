@@ -10,19 +10,19 @@ const PersonsList = () => {
         <ul className="thanks-list">
             <li>
                 <div>
-                    <img className="thanks-list--picture" src="https://dummyimage.com/150x150/55704e/55704e.png" alt="Dummy Person Image"/>
+                    <img className="thanks-list--picture" src="https://dummyimage.com/150x150/55704e/55704e.png" alt="ProfilePic"/>
                     <p>This is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis </p>
                 </div>
             </li>
             <li>
                 <div>
-                    <img className="thanks-list--picture" src="https://dummyimage.com/150x150/55704e/55704e.png" alt="Dummy Person Image"/>
+                    <img className="thanks-list--picture" src="https://dummyimage.com/150x150/55704e/55704e.png" alt="ProfilePic"/>
                     <p>This is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy text</p>
                 </div>
             </li>
             <li>
                 <div>
-                    <img className="thanks-list--picture" src="https://dummyimage.com/150x150/55704e/55704e.png" alt="Dummy Person Image"/>
+                    <img className="thanks-list--picture" src="https://dummyimage.com/150x150/55704e/55704e.png" alt="ProfilePic"/>
                     <p>This is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy textThis is some dummy text</p>
                 </div>
             </li>

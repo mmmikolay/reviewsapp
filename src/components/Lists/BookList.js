@@ -4,15 +4,18 @@ import { GET_BOOKS } from '../../queries/queries';
 import ScrollContainer from 'react-indiana-drag-scroll';
 
 // ROUTER
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
 
-const BookList = () => {
+
+
+const BookList = ({ itemType }) => {
     let history = useHistory();
+    // const { item } = useParams();
     const { loading, error, data } = useQuery(GET_BOOKS);
 
     const handleClick = book => {
-        history.push(`book/details/${book.id}`);
+        history.push(`${itemType}/details/${book._id}`);
     }
 
 
@@ -21,7 +24,7 @@ const BookList = () => {
             return(<div>Loading books...</div>);
         } else {
             return data.books.map(book => {
-                return (<div key={book.id} onClick={event => handleClick(book)}><img src= {book.cover} alt={book.name}/></div>);
+                return (<div key={book._id} onClick={event => handleClick(book)}><img src= {book.cover} alt={book.name}/></div>);
             });
         }
     }

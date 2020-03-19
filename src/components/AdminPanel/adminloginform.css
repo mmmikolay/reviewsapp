@@ -1,0 +1,88 @@
+.login-form-container {
+    margin: 0px;
+    background-color: var(--gray-lightest);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login {
+    margin: auto;
+    background-color: var(--gray-darker) ;
+    padding: 0;
+    width: 80%;
+    min-width: 270px;
+    max-width: 540px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    box-shadow:
+    0 2px 2px rgba(0,0,0,0.2),        
+    0 1px 15px rgba(0,0,0,0.8),        
+    0 0 0 12px var(--gray-lighter); 
+}
+
+.login .field,.field-select{
+    display: grid;
+    grid-gap: 0px;
+    text-align: center;
+}
+
+.login .field:last-of-type {
+    margin-bottom: 1em;
+}
+
+.login .field {
+    grid-template-rows: 1fr 1fr;
+}
+.login .field-select{
+    grid-template-columns: min-content auto min-content;
+}
+
+.login label {
+    text-align: start;
+    font-size: smaller;
+    padding: 6px 6px 0px;
+    margin: 6px 12px 0px;
+    font-weight: bolder;
+    color: var(--gray-darkest);
+    text-shadow: 0.3px 0.3px var(--gray);
+}
+
+.login h2 {
+    background-color: var(--gray-dark);
+    font-weight: bold;
+    padding: 0.3rem 1rem 0.3rem;
+    margin: 0;
+    border-bottom: 1px solid var(--gray);
+    text-shadow: 0 1px 0 var(--gray-lighter);
+    box-shadow: 0 1px 0 var(--gray-darkest);
+}
+
+
+
+/* FORMS END*/
+
+.submit-form {
+    height: 40px;
+    padding: 10px 10px 10px;
+    border-radius: 4px;
+    margin: 0 auto 1em;
+    width: 80%;
+    font-size: 1.1em;
+    background-color: var(--blue-light);
+    background: linear-gradient(var(--gray-darker), var(--gray-darkest));
+    border: 1px solid var(--gray-light);
+    color: var(--gray-lightest);
+    text-shadow: 0 1px var(--gray-dark);
+}
+
+@media screen and (max-width: 675px){
+    .submit-form {
+        position: relative;
+    }
+}
