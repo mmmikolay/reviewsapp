@@ -4,15 +4,17 @@ import { GET_BOOKS } from '../../queries/queries';
 import ScrollContainer from 'react-indiana-drag-scroll';
 
 // ROUTER
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 
 
 
 const BookList = ({ itemType }) => {
     let history = useHistory();
-    // const { item } = useParams();
     const { loading, error, data } = useQuery(GET_BOOKS);
+    if(error){
+        throw error;
+    }
 
     const handleClick = book => {
         history.push(`${itemType}/details/${book._id}`);

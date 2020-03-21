@@ -39,6 +39,9 @@ const GameDetails = () => {
 
     const { gameid } = useParams();
     const { loading, error, data } = useQuery(GET_GAMES);
+    if(error){
+        throw error;
+    }
 
     const handleClick = id => {
         if(id !== undefined) {
@@ -104,19 +107,19 @@ const GameDetails = () => {
             <div className="info-container">
                 <div className = "info">
                     <div className = "info--cover">
-                            <img  className = "info--cover" src= {detailsPhoto} alt= "Cover Photo"/>
+                            <img  className = "info--cover" src= {detailsPhoto} alt= "Cover"/>
                         </div>
                         <p>{gameReview} </p>
 
                     <div className ="adjacent-items">
                         <div className= "box prev hover-anim" onClick={ event => handleClick(prevGameId)}>
-                            <img className = "box-image" src={prevGameCover} />
+                            <img src={prevGameCover} alt="Prev"/>
                         </div>
                         <div className= "box back hover-anim"onClick = {event => handleClick()}>
-                            <img className = "box-image" src={gameCover}/>
+                            <img src={gameCover} alt="Main Menu"/>
                         </div>
                         <div className= "box next hover-anim" onClick = {event => handleClick(nextGameId)}>
-                            <img className="box-image" src={nextGameCover} />
+                            <img src={nextGameCover} alt="Next"/>
                         </div>
                     </div>
                 </div>

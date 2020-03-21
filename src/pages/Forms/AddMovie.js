@@ -23,8 +23,11 @@ const AddMovie = () => {
     })
 
     // GQL Queries
-    const { loading, error, data } = useQuery(GET_DIRECTORS); 
-    const  [addMovieMutation, { mutationData }]  = useMutation(ADD_MOVIE); 
+    const { loading, error, data } = useQuery(GET_DIRECTORS);
+    if(error){
+        throw error;
+    }
+    const  [addMovieMutation]  = useMutation(ADD_MOVIE); 
 
     const displayDirectors =() => {
         if(loading){

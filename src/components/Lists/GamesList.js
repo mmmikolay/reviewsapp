@@ -10,6 +10,9 @@ import { useHistory } from 'react-router-dom';
 const GamesList = () => {
     let history = useHistory();
     const { loading, error, data } = useQuery(GET_GAMES);
+        if(error){
+            throw error;
+        }
 
     const handleClick = game => {
         history.push(`/game/details/${game.id}`);

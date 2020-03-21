@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/react-hooks';
 import { ADD_DIRECTOR, GET_DIRECTORS } from '../../queries/queries';
 
 //STYLES
@@ -22,8 +22,7 @@ const AddDirector = () => {
     })
 
     // GQL Queries
-    const { loading, error, data } = useQuery(GET_DIRECTORS); 
-    const  [addDirectorMutation, { mutationData }]  = useMutation(ADD_DIRECTOR); 
+    const  [addDirectorMutation]  = useMutation(ADD_DIRECTOR); 
 
 
 

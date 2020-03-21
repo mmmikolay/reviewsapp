@@ -8,7 +8,7 @@ import './homebutton.css';
 export const HomeButtonDark = () => {
     let history = useHistory();
 
-    const handleClick =() => {
+    const handleClick = () => {
         history.push('/');
     }
 

@@ -22,8 +22,11 @@ const AddGame = () => {
     })
 
     // GQL Queries
-    const { loading, error, data } = useQuery(GET_STUDIOS); 
-    const  [addGameMutation, { mutationData }]  = useMutation(ADD_GAME); 
+    const { loading, error, data } = useQuery(GET_STUDIOS);
+    if(error){
+        throw error;
+    }
+    const  [addGameMutation]  = useMutation(ADD_GAME); 
 
     const displayStudios =() => {
         if(loading){

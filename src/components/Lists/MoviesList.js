@@ -10,6 +10,9 @@ import { useHistory } from 'react-router-dom';
 const MoviesList = () => {
     let history = useHistory();
     const { loading, error, data } = useQuery(GET_MOVIES);
+    if(error){
+        throw error;
+    }
 
     const handleClick = movie => {
         history.push(`movie/details/${movie.id}`);

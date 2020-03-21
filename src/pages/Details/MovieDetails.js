@@ -39,6 +39,9 @@ const MovieDetails = () => {
 
     const { movieid } = useParams();
     const { loading, error, data } = useQuery(GET_MOVIES);
+    if(error){
+        throw error;
+    }
 
     const handleClick = id => {
         if(id !== undefined) {
@@ -104,19 +107,19 @@ const MovieDetails = () => {
             <div className="info-container">
                 <div className = "info">
                     <div className = "info--cover">
-                            <img  className = "info--cover" src= {detailsPhoto} alt= "Cover Photo"/>
+                            <img  className = "info--cover" src= {detailsPhoto} alt= "Cover"/>
                         </div>
                         <p>{movieReview} </p>
 
                     <div className ="adjacent-items">
-                        <div className= "box prev hover-anim" onClick={ event => handleClick(prevMovieId)}>
-                            <img className = "box-image" src={prevMovieCover} />
+                        <div className= "box prev hover-anim" onClick={event => handleClick(prevMovieId)}>
+                            <img src={prevMovieCover} alt="Previous"/>
                         </div>
                         <div className= "box back hover-anim"onClick = {event => handleClick()}>
-                            <img className = "box-image" src={movieCover}/>
+                            <img src={movieCover} alt="Main Menu"/>
                         </div>
                         <div className= "box next hover-anim" onClick = {event => handleClick(nextMovieId)}>
-                            <img className="box-image" src={nextMovieCover} />
+                            <img src={nextMovieCover} alt="Main Menu" />
                         </div>
                     </div>
                 </div>

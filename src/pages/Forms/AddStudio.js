@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/react-hooks';
 import { ADD_STUDIO, GET_STUDIOS } from '../../queries/queries';
 
 //STYLES
@@ -21,9 +21,8 @@ const AddStudio = () => {
 
     })
 
-    // GQL Queries
-    const { loading, error, data } = useQuery(GET_STUDIOS); 
-    const  [addStudioMutation, { mutationData }]  = useMutation(ADD_STUDIO); 
+    // GQL Queries 
+    const  [addStudioMutation]  = useMutation(ADD_STUDIO); 
 
 
 
@@ -74,11 +73,7 @@ const AddStudio = () => {
             </form>
             <button className="add-item-button" onClick={submitForm}>+</button>
         </div>
-   
-
-
         </>
     )
 }
-
 export default AddStudio;

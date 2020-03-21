@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/react-hooks';
 import { ADD_AUTHOR, GET_AUTHORS } from '../../queries/queries';
 
 //STYLES
@@ -21,9 +21,8 @@ const AddAuthor = () => {
 
     })
 
-    // GQL Queries
-    const { loading, error, data } = useQuery(GET_AUTHORS); 
-    const  [addAuthorMutation, { mutationData }]  = useMutation(ADD_AUTHOR); 
+    // GQL Queries 
+    const  [addAuthorMutation]  = useMutation(ADD_AUTHOR); 
 
 
 
@@ -74,9 +73,6 @@ const AddAuthor = () => {
             </form>
             <button className="add-item-button" onClick={submitForm}>+</button>
         </div>
-   
-
-
         </>
     )
 }

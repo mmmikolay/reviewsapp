@@ -22,8 +22,11 @@ const AddBook = () => {
     })
 
     // GQL Queries
-    const { loading, error, data } = useQuery(GET_AUTHORS); 
-    const  [addBookMutation, { mutationData }]  = useMutation(ADD_BOOK); 
+    const { loading, error, data } = useQuery(GET_AUTHORS);
+    if(error){
+        throw error;
+    }
+    const  [addBookMutation]  = useMutation(ADD_BOOK); 
 
     const displayAuthors =() => {
         if(loading){

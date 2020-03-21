@@ -37,6 +37,9 @@ const BookDetails = () => {
     const { bookid } = useParams();
     const { item } = useParams();
     const { loading, error, data } = useQuery(GET_BOOKS);
+    if(error){
+        throw error;
+    }
 
     const handleClick = id => {
         if(id !== undefined) {
@@ -103,19 +106,19 @@ const BookDetails = () => {
             <div className="info-container">
                 <div className = "info">
                     <div className = "info--cover">
-                            <img  className = "info--cover" src= {detailsPhoto} alt= "Cover Photo"/>
+                            <img className = "info--cover" src= {detailsPhoto} alt= "Cover"/>
                         </div>
                         <p>{itemReview} </p>
 
                     <div className ="adjacent-items">
                         <div className= "box prev hover-anim" onClick={ event => handleClick(prevItemId)}>
-                            <img className = "box-image" src={prevItemCover} />
+                            <img src={prevItemCover} alt="Previous"/>
                         </div>
                         <div className= "box back hover-anim"onClick = {event => handleClick()}>
-                            <img className = "box-image" src={itemCover}/>
+                            <img src={itemCover} alt="Main Menu"/>
                         </div>
                         <div className= "box next hover-anim" onClick = {event => handleClick(nextItemId)}>
-                            <img className="box-image" src={nextItemCover} />
+                            <img src={nextItemCover} alt="Main Menu" />
                         </div>
                     </div>
                 </div>
