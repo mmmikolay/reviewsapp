@@ -14,7 +14,7 @@ const PlayList = () => {
             <p>Here I tried to list some of the PC games that got caught to my interest through the years. What I want to find in a PC game is a unique experience. By that I mean a game should be different from others by at least one radically unique feature.</p>
             <p> Game design based on an Idea is, In my opinion, something we now can only encounter on independent (and most probably relatively low-budget) designs. Be it  a mind-boggling puzzler, or a difficult as hell platformer, majority of the impressive work was produced by small indie developers. I respect their work and effort.</p>
         </div>
-        <GamesList/>
+        <GamesList itemType = "game"/>
         </>
     )
 }

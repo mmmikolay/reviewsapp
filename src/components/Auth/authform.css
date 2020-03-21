@@ -46,11 +46,11 @@
 .login label {
     text-align: start;
     font-size: smaller;
-    padding: 6px 6px 0px;
+    padding: 6px 6px 0px 0px;
     margin: 6px 12px 0px;
-    font-weight: bolder;
-    color: var(--gray-darkest);
-    text-shadow: 0.3px 0.3px var(--gray);
+    font-weight: lighter;
+    color: var(--white);
+    text-shadow: 0.3px 0.5px var(--gray-darkest);
 }
 
 .login h2 {
@@ -62,10 +62,6 @@
     text-shadow: 0 1px 0 var(--gray-lighter);
     box-shadow: 0 1px 0 var(--gray-darkest);
 }
-
-
-
-/* FORMS END*/
 
 .submit-form {
     height: 40px;

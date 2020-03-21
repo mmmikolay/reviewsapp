@@ -52,9 +52,9 @@ const Router = () => {
         <ScrollToTop />
         <main>
           <Switch>
-            <Route path ="/:item/details/:bookid" component = {BookDetails}/>
-            <Route path ="/movie/details/:movieid" component = {MovieDetails}/>
-            <Route path ="/game/details/:gameid" component = {GameDetails}/>
+            <Route path ="/book/details/:itemid" component = {BookDetails}/>
+            <Route path ="/movie/details/:itemid" component = {MovieDetails}/>
+            <Route path ="/game/details/:itemid" component = {GameDetails}/>
 
 
             {!loggedIn && <Redirect from = "/add_author" to = "/" exact/>}

@@ -41,7 +41,6 @@ const AuthForm = () => {
         })
 
         if(res.status !== 200 && res.status !== 201){
-            console.log(res.status);
             throw new Error ("Failed!");
         }
         const resData = await res.json();
@@ -53,7 +52,7 @@ const AuthForm = () => {
         }
 
         catch(err){
-            console.log(err);
+            throw new Error("Authentication Failure!");
         };
     }
 

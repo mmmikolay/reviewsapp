@@ -85,12 +85,12 @@ export const GET_AUTHORS = gql`
 export const GET_MOVIES = gql`
     {
         movies{
+            _id
             name
             cover
             review
             header
             detailsPhoto
-            _id
             creator {
                 name
                 bio

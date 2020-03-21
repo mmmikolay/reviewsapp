@@ -7,7 +7,7 @@ import ScrollContainer from 'react-indiana-drag-scroll';
 import { useHistory } from 'react-router-dom';
 
 
-const GamesList = () => {
+const GamesList = ({ itemType }) => {
     let history = useHistory();
     const { loading, error, data } = useQuery(GET_GAMES);
         if(error){
@@ -15,7 +15,7 @@ const GamesList = () => {
         }
 
     const handleClick = game => {
-        history.push(`/game/details/${game.id}`);
+        history.push(`${itemType}/details/${game._id}`);
     }
 
 
@@ -24,7 +24,7 @@ const GamesList = () => {
             return(<div>Loading games...</div>);
         } else {
             return data.games.map(game => {
-                return (<div key={game.id} onClick={event => handleClick(game)}><img src= {game.cover} alt={game.name}/></div>);
+                return (<div key={game._id} onClick={event => handleClick(game)}><img src= {game.cover} alt={game.name}/></div>);
             });
         }
     }

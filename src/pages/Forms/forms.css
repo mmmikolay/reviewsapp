@@ -4,19 +4,26 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .add-item {
     margin: auto;
-    background-color: var(--turquoise-darker) ;
-    padding: 10px 10px 10px;
+    background-color: var(--gray-darker) ;
+    padding: 0;
     width: 80%;
     min-width: 270px;
     max-width: 540px;
     height:auto;
-    border-radius: 12px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
+    border-radius: 4px;
+
+    box-shadow:
+    0 2px 2px rgba(0,0,0,0.2),        
+    0 1px 15px rgba(0,0,0,0.8),        
+    0 0 0 12px var(--gray-lighter);
 }
 
 .add-item .field,.field-select{
@@ -41,10 +48,7 @@
     color: var(--gray-darkest);
     text-shadow: 0.3px 0.3px var(--gray);
 }
-/* FORMS END*/
 
-
-/* BUTTONS */
 .add-item-button {
     width: 40px;
     height: 40px;
@@ -66,7 +70,6 @@
     bottom: 10px;
     right: 10px;
 }
-/* BUTTONS END*/
 
 @media screen and (max-width: 675px){
     .add-item-button {

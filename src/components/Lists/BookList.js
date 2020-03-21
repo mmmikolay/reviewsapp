@@ -15,7 +15,6 @@ const BookList = ({ itemType }) => {
     if(error){
         throw error;
     }
-
     const handleClick = book => {
         history.push(`${itemType}/details/${book._id}`);
     }
