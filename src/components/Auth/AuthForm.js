@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import { useHistory } from 'react-router-dom';
-import Cookies from 'js-cookie';
+// import { useHistory } from 'react-router-dom';
+// import Cookies from 'js-cookie';
 
 //STYLES
 import './authform.css';
@@ -8,7 +8,7 @@ import './authform.css';
 const AuthForm = () => {
     const emailEl = useRef(null);
     const passwordEl = useRef(null);
-    let history = useHistory();
+    // let history = useHistory();
 
 
     const submitForm = async event => {
