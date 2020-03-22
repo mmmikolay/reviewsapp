@@ -15,7 +15,7 @@ const GameDetails = () => {
 
     const showDetails = () => {
         if (!loading && data !== undefined ){
-            return (<Details itemData = {data.games} />);
+            return (<Details itemData = {data.games} item="game" />);
         } else {
             return (<h1>Loading...</h1>);
         }

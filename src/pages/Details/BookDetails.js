@@ -15,7 +15,7 @@ const BookDetails = () => {
 
     const showDetails = () => {
         if (!loading && data !== undefined ){
-            return (<Details itemData = {data.books} />);
+            return (<Details itemData = {data.books} item="book" />);
         } else {
             return (<h1>Loading...</h1>);
         }

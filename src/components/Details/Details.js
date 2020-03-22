@@ -8,10 +8,10 @@ import { useHistory, useParams } from 'react-router-dom';
 
 import { HomeButtonDark } from '../Buttons/HomeButton';
 
-const Details = ({ itemData }) => {
+const Details = ({ itemData, item }) => {
     let history = useHistory();
     const { itemid } = useParams();
-    const { item } = useParams();
+    //  const { item } = useParams();
 
 
     let [previtem, curritem, nextitem] = [null, null, null];
@@ -37,20 +37,7 @@ const Details = ({ itemData }) => {
 
         const handleClick = (id) => {
             if(id !== undefined) {
-                switch (item) {
-                    case "book":
-                        history.push(`/book/details/${id}`);                        
-                    break;
-                    case "game":
-                        history.push(`/game/details/${id}`);                        
-                    break;
-                    case "movie":
-                        history.push(`/movie/details/${id}`);                        
-                    break;                
-                    default:
-                        history.push("/");    
-                }
-
+                history.push(`/${item}/details/${id}`);
             } else {
                 history.push("/")
             }
