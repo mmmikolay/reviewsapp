@@ -45,13 +45,8 @@ const AuthForm = () => {
                 return res.json();
             }).then(resData => {
                 if(resData.data){
-                    document.cookie = 'signedin=true'
-                }
-            }).then(() => {
-                if(Cookies.get("signedin")){
-                    history.push("/admin_panel");
-                } else {
-                    history.push("/");
+                    document.cookie = 'signedin=true';
+                    history.push("/admin_panel")
                 }
             }).catch(err => {
                 throw new Error(err)
