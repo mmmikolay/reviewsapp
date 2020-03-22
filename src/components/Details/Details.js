@@ -39,7 +39,7 @@ const Details = ({ itemData, item }) => {
             if(id !== undefined) {
                 history.push(`/${item}/details/${id}`);
             } else {
-                history.push("/")
+                history.push("/");
             }
         }
 

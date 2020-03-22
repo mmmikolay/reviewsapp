@@ -17,41 +17,46 @@ const AuthForm = () => {
         const password = passwordEl.current.value;
         try {
 
-        if(email.trim().length === 0 || password.trim().length === 0) {
-            return;
-        }
+            if(email.trim().length === 0 || password.trim().length === 0) {
+                return;
+            }
 
-        let requestBody = {
-            query: `
-              query {
-                login(email: "${email}", password: "${password}") {
-                  success
+            let requestBody = {
+                query: `
+                query {
+                    login(email: "${email}", password: "${password}") {
+                    success
+                    }
                 }
-              }
-            `
-          };
+                `
+            };
 
-        const res = await fetch("http://localhost:4000/graphql", {
-            method: "POST",
-            credentials: "include",
-            body: JSON.stringify(requestBody),
-            headers:{
-                "Content-Type":"application/json"
-            }
-        })
-
-        if(res.status !== 200 && res.status !== 201){
-            throw new Error ("Failed!");
-        }
-        const resData = await res.json();
-            if(resData.data){
-                document.cookie = 'signedin=true';
-            }
-            if(Cookies.get("signedin"))
-            {history.push("/admin_panel")};
-        }
-
-        catch(err){
+            fetch("http://localhost:4000/graphql", {
+                method: "POST",
+                credentials: "include",
+                body: JSON.stringify(requestBody),
+                headers:{
+                    "Content-Type":"application/json"
+                }
+            }).then(res => {
+                if(res.status !== 200 && res.status !== 201){
+                    throw new Error ("Failed!");
+                }
+                return res.json();
+            }).then(resData => {
+                if(resData.data){
+                    document.cookie = 'signedin=true'
+                }
+            }).then(() => {
+                if(Cookies.get("signedin")){
+                    history.push("/admin_panel");
+                } else {
+                    history.push("/");
+                }
+            }).catch(err => {
+                throw new Error(err)
+            })
+        } catch(err) {
             throw new Error("Authentication Failure!");
         };
     }

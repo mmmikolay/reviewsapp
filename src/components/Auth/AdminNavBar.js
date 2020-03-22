@@ -9,6 +9,21 @@ const AdminNavBar = () => {
             <nav className="main-navigation__items">
                 <ul>
                     <li>
+                        <NavLink to="/books">
+                            Books
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/movies">
+                            Movies
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/games">
+                            Games
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink to="/add_book">
                             Add Book
                         </NavLink>
