@@ -35,9 +35,9 @@ const Details = ({ itemData }) => {
             }
         };
 
-        const handleClick = id => {
+        const handleClick = (navLoc, id) => {
             if(id !== undefined) {
-                history.push(`/${item}/details/${id}`);
+                history.push(`/${navLoc}/details/${id}`);
             } else {
                 history.push("/")
             }
@@ -68,7 +68,7 @@ const Details = ({ itemData }) => {
                         <div className= "box back hover-anim"onClick = {event => handleClick()}>
                             <img src={curritem.cover} alt="Main Menu"/>
                         </div>
-                        {nextitem && <div className= "box next hover-anim" onClick = {event => handleClick(nextitem._id)}>
+                        {nextitem && <div className= "box next hover-anim" onClick = {event => handleClick(item, nextitem._id)}>
                             <img src={nextitem.cover} alt="Main Menu" />
                         </div>}
                     </div>
