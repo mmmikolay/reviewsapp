@@ -79,7 +79,7 @@ const Router = () => {
             <Route exact path ="/contact" component = {Contact}/>
             <Route exact path ="/thanks" component = {SpecialThanks}/>
 
-            {signedIn && <Redirect from ="/auth" to="admin_panel" exact/>}
+            {signedIn && <Redirect from ="/auth" to="/admin_panel" exact/>}
             {!signedIn && <Redirect from = "/admin_panel" to = "/" exact/>}
             <Route exact path ="/auth" component = {Auth}/>
             <Route exact path ="/admin_panel" component = {AdminPage}/>
