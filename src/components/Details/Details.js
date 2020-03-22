@@ -43,8 +43,6 @@ const Details = ({ itemData }) => {
             }
         }
 
-
-    console.log(itemData);
     return (
         <>
         { curritem && <div className = "details-container">

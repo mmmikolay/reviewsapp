@@ -13,7 +13,7 @@ const MoviesList = ({ itemType }) => {
     if(error){
         throw error;
     }
-    console.log(itemType);
+
     const handleClick = movie => {
         history.push(`${itemType}/details/${movie._id}`);
     }
