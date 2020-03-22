@@ -37,7 +37,20 @@ const Details = ({ itemData }) => {
 
         const handleClick = (id) => {
             if(id !== undefined) {
-                history.push(`/book/details/${id}`);
+                switch (item) {
+                    case "book":
+                        history.push(`/book/details/${id}`);                        
+                    break;
+                    case "game":
+                        history.push(`/game/details/${id}`);                        
+                    break;
+                    case "movie":
+                        history.push(`/movie/details/${id}`);                        
+                    break;                
+                    default:
+                        history.push("/");    
+                }
+
             } else {
                 history.push("/")
             }
