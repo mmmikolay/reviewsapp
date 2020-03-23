@@ -63,6 +63,7 @@ const Router = () => {
             {!signedIn && <Redirect from = "/add_movie" to = "/" exact/>}
             {!signedIn && <Redirect from = "/add_studio" to = "/" exact/>}
             {!signedIn && <Redirect from = "/add_game" to = "/" exact/>}
+            {!signedIn && <Redirect from = "/admin_panel" to = "/" exact/>}
 
             <Route exact path ="/add_author" component = {AddAuthor}/>
             <Route exact path ="/add_book" component = {AddBook}/>
@@ -80,7 +81,6 @@ const Router = () => {
             <Route exact path ="/thanks" component = {SpecialThanks}/>
 
             {signedIn && <Redirect from ="/auth" to="/admin_panel" exact/>}
-            {!signedIn && <Redirect from = "/admin_panel" to = "/" exact/>}
             <Route exact path ="/auth" component = {Auth}/>
             <Route exact path ="/admin_panel" component = {AdminPage}/>
 

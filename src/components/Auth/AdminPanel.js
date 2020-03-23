@@ -1,11 +1,10 @@
 import React from 'react';
-import NavBar from './AdminNavBar';
+import NavBar from '../NavBar/NavBar';
 
 
 const AdminPanel = () => {
     return (
         <NavBar />
-
     );
 }
 

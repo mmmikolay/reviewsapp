@@ -6,6 +6,7 @@
     background-color: var(--gray-lightest);
 }
 
+
 .thanks-list {
     padding: 0;
     margin: auto;
@@ -39,7 +40,6 @@
 }
 
 @media (max-width: 812px) {
-
     .thanks-list {
         width: 80%;
     }
@@ -52,6 +52,11 @@
     .thanks-list--picture {
         height: 120px;
         width: 120px;
+    }
+
+    .nav-background.vanish {
+        display: none;
+    
     }
 
 }

@@ -15,6 +15,7 @@ const ContactMap = ({ google }) => {
     return (
     <>
     <div className="map-container">
+    <div className="nav-background"></div>
     <div className="map-box">
         <Map
             google={google}

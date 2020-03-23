@@ -8,7 +8,6 @@
     grid-template-columns: 40% 60%;
 }
 
-
 @media (max-width: 812px) {
     .about-screen-container{
         display: unset;

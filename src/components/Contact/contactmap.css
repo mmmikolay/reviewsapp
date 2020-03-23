@@ -5,7 +5,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: var(--gray-lightest);
+    position: relative;
 }
+
+
 .map-box{
     position: relative;
     width: 600px;

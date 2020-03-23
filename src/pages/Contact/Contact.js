@@ -1,4 +1,5 @@
 import React from 'react'
+import NavBar from '../../components/NavBar/NavBar';
 
 //STYLES
 import './contact.css';
@@ -10,6 +11,7 @@ const Contact = () => {
     return (
     <>
         <div className="contact-screen-container pc">
+            <NavBar/>
             <ContactInfo />
             <MapSketch />
         </div>

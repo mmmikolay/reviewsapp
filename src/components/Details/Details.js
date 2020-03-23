@@ -6,8 +6,6 @@ import './details.css';
 
 import { useHistory, useParams } from 'react-router-dom';
 
-import { HomeButtonDark } from '../Buttons/HomeButton';
-
 const Details = ({ itemData, item }) => {
     let history = useHistory();
     const { itemid } = useParams();
@@ -46,14 +44,15 @@ const Details = ({ itemData, item }) => {
     return (
         <>
         { curritem && <div className = "details-container">
-            <HomeButtonDark/>
             <div className = "review-heading">
                 <h2>{curritem.header}</h2>
             </div>
+            <div className="creator-info-container">
                 <div className = "creator-info">
                     <img className = "creator-portrait" src={curritem.creator.photo} alt="Creator's Portrait" />
                     <p>{curritem.creator.bio}</p>
                 </div>
+            </div>
             <div className="info-container">
                 <div className = "info">
                     <div className = "info--cover">

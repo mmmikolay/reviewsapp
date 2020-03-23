@@ -1,4 +1,5 @@
 import React from 'react'
+import NavBar from '../../components/NavBar/NavBar';
 
 // STYLES
 import './specialthanks.css';
@@ -10,6 +11,7 @@ const SpecialThanks = () => {
     return (
     <>
         <div id="thanks">
+            <NavBar/>
             <ThanksNote />
             <PersonsList />
         </div>

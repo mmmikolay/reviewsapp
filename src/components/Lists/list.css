@@ -2,6 +2,7 @@
 
 .list-container {
     margin:1em 1em 1em;
+    background-color: var(--gray-lightest);
 }
 
 .list-container h1 > small {

@@ -74,6 +74,7 @@
     --orange-darker: #ad4305;
     --orange-darkest: #792f04;
 
+    --navbar-height: 4.2rem;
     --max-width: 1600px;
 }
 html {
@@ -86,6 +87,14 @@ body{
     background: var(--gray-lightest);
     height: 100%;
     font-family: 'Roboto Condensed', cursive;
+}
+
+#root {
+    height: 100%;
+}
+
+main {
+    height: 100%;
 }
 
 form input, form select {
@@ -116,4 +125,14 @@ button:hover {
     height: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
+}
+
+.nav-background {
+    background-color: inherit;
+    min-height: var(--navbar-height);
+    height: var(--navbar-height);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }

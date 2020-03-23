@@ -7,8 +7,8 @@ import './thanksnote.css';
 const ThanksNote = () => {
     return (
         <div className="thanks-note-container">
-            <HomeButtonDark />
-            <p>MY SPECIAL THANKS TO BEAUTIFUL PEOPLE HELPED ME FINISH THIS PROJECT...</p>
+            <div className="nav-background"></div>
+            <p>This page is dedicated to people who kept me going in my task to complete this project by helping me (hugely) in various ways. THANK YOU guys...</p>
         </div>
     )
 }

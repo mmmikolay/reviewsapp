@@ -7,9 +7,7 @@ import './contactme.css';
 const ContactMe = () => {
     return (
         <div className="contact-container">
-
-            <HomeButtonDark/>
-
+            <div className="nav-background"></div>
             <h2>Contact Me</h2>
             <ul className="contact-list">
                 <li className = "contact-list--list-item">

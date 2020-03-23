@@ -1,16 +1,30 @@
 .container {
     position: relative;
     width: 100%;
+    /* min-height: 100vh; */
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: var(--turquoise-darker);
-    min-height: 100vh;
+    color: var(--gray-lightest);
+}
+
+.about-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .container h1 {
+    color: var(--gray-darkest);
     text-align: center;
+
 }
 .container p {
     text-align: center;

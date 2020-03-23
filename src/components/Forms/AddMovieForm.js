@@ -119,7 +119,7 @@ const AddMovie = () => {
                         <option>Select director</option>
                         {displayDirectors()}
                     </select>
-                    <button className= "new-producer"onClick={handleClick}>+</button>
+                    <button className= "new-creator"onClick={handleClick}>+</button>
                 </div>
 
                 <button className= "add-item-button" onClick={submitForm}>+</button>

@@ -7,6 +7,7 @@ const PersonsList = () => {
     return (
     <>
     <div className="thanks-list-container">
+        <div className="nav-background vanish"></div>
         <ul className="thanks-list">
             <li>
                 <div>

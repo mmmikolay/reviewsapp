@@ -1,10 +1,11 @@
 .home-button-container {
-    position: absolute;
-    top: 1em;
-    left: 1em;
+    /* position: absolute; */
+    top: 1rem;
+    left: 1rem;
     border-radius: 50%;
     cursor: pointer;
     z-index: 100;
+    scale: 65%;
 
 }
 

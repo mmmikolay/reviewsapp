@@ -117,7 +117,7 @@ const AddGameForm = () => {
                         <option>Select studio</option>
                         {displayStudios()}
                     </select>
-                    <button className= "new-producer"onClick={handleClick}>+</button>
+                    <button className= "new-creator"onClick={handleClick}>+</button>
                 </div>
 
                 <button className= "add-item-button" onClick={submitForm}>+</button>
