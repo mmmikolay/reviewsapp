@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/reviewsapp/static/css/main.b0c88f5b.chunk.css",
-    "main.js": "/reviewsapp/static/js/main.a933d51e.chunk.js",
-    "main.js.map": "/reviewsapp/static/js/main.a933d51e.chunk.js.map",
+    "main.css": "/reviewsapp/static/css/main.7c5f6e7a.chunk.css",
+    "main.js": "/reviewsapp/static/js/main.b7d65309.chunk.js",
+    "main.js.map": "/reviewsapp/static/js/main.b7d65309.chunk.js.map",
     "runtime-main.js": "/reviewsapp/static/js/runtime-main.08ad6206.js",
     "runtime-main.js.map": "/reviewsapp/static/js/runtime-main.08ad6206.js.map",
-    "static/js/2.410795aa.chunk.js": "/reviewsapp/static/js/2.410795aa.chunk.js",
-    "static/js/2.410795aa.chunk.js.map": "/reviewsapp/static/js/2.410795aa.chunk.js.map",
+    "static/js/2.f77d84e4.chunk.js": "/reviewsapp/static/js/2.f77d84e4.chunk.js",
+    "static/js/2.f77d84e4.chunk.js.map": "/reviewsapp/static/js/2.f77d84e4.chunk.js.map",
     "index.html": "/reviewsapp/index.html",
-    "precache-manifest.d3bdede2502e4060ac1a9ed613a01ea2.js": "/reviewsapp/precache-manifest.d3bdede2502e4060ac1a9ed613a01ea2.js",
+    "precache-manifest.823d824fff7e372de2be61fd60042cc7.js": "/reviewsapp/precache-manifest.823d824fff7e372de2be61fd60042cc7.js",
     "service-worker.js": "/reviewsapp/service-worker.js",
-    "static/css/main.b0c88f5b.chunk.css.map": "/reviewsapp/static/css/main.b0c88f5b.chunk.css.map",
-    "static/js/2.410795aa.chunk.js.LICENSE.txt": "/reviewsapp/static/js/2.410795aa.chunk.js.LICENSE.txt"
+    "static/css/main.7c5f6e7a.chunk.css.map": "/reviewsapp/static/css/main.7c5f6e7a.chunk.css.map",
+    "static/js/2.f77d84e4.chunk.js.LICENSE.txt": "/reviewsapp/static/js/2.f77d84e4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.08ad6206.js",
-    "static/js/2.410795aa.chunk.js",
-    "static/css/main.b0c88f5b.chunk.css",
-    "static/js/main.a933d51e.chunk.js"
+    "static/js/2.f77d84e4.chunk.js",
+    "static/css/main.7c5f6e7a.chunk.css",
+    "static/js/main.b7d65309.chunk.js"
   ]
 }
