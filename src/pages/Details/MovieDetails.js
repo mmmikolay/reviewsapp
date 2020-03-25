@@ -5,6 +5,8 @@ import {
 } from '../../queries/queries';
 import { useQuery } from '@apollo/react-hooks';
 import Details from '../../components/Details/Details';
+import NavBar from '../../components/NavBar/NavBar';
+
 
 const MovieDetails = () => {
 
@@ -23,6 +25,7 @@ const MovieDetails = () => {
     
     return (
         <>
+        <NavBar />
         {showDetails()}
         </>
     )
