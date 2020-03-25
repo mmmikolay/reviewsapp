@@ -6,7 +6,6 @@ import './about.css';
 
 const AboutProject = () => {
     const contactUrl = `${process.env.PUBLIC_URL}/contact`;
-    const expressUrl = "https://expressjs.com/";
     const graphQLUrl = "https://graphql.org/";
     const mongoUrl = "https://www.mongodb.com/cloud/atlas";
     const reactUrl = "https://reactjs.org/";
