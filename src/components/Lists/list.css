@@ -71,7 +71,8 @@
     transition: transform .2s;
 }
 .scroll-list div:hover{
-    transform: scale(1.05);
+    transform: scale(105%);
+    -webkit-transform: scale(1.05);
 }
 
 .scroll-list img {

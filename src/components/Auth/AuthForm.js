@@ -32,7 +32,7 @@ const AuthForm = () => {
             };
 
             // fetch("http://localhost:4000/graphql", {
-            fetch(`${process.env.SERVER_URL}/graphql`, {
+            fetch(`${process.env.REACT_APP_SERVER_URL}/graphql`, {
                 method: "POST",
                 credentials: "include",
                 body: JSON.stringify(requestBody),
@@ -45,7 +45,7 @@ const AuthForm = () => {
                 }
                 return res.json();
             }).then(resData => {
-                if(resData.data){
+                if(resData.data.success === true){
                     document.cookie = 'signedin=true';
                     // history.push("/admin_panel")
                 }

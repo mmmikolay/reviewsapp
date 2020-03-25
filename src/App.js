@@ -12,7 +12,6 @@ import Router from './components/Router/Router';
 import './index.css';
 
 
-
 //APOLLO-CLIENT SETUP
 const httpLink = createHttpLink({ 
   // uri: 'http://localhost:4000/graphql',

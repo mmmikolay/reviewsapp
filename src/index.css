@@ -119,6 +119,8 @@ button {
 
 button:hover {
     transform: scale(106%);
+    -webkit-transform: scale(1.06);
+
 }
 
 #max-width-wrapper {

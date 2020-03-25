@@ -5,13 +5,13 @@
     border-radius: 50%;
     cursor: pointer;
     z-index: 100;
-    scale: 65%;
-
+    transform: scale(65%);
+    -webkit-transform: scale(0.65);
 }
 
 .home-button-container:hover {
-    transform: scale(105%);
-    -webkit-transform: scale(1.05);
+    transform: scale(78%);
+    -webkit-transform: scale(0.78);
 }
 
 .right {
