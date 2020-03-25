@@ -1,5 +1,4 @@
 import React from 'react';
-import { HomeButtonDark } from '../Buttons/HomeButton';
 
 //STYLES
 import './contactme.css';

@@ -1,6 +1,5 @@
 import React from 'react'
 import BookList from './BookList';
-import { HomeButtonLight } from '../Buttons/HomeButton';
 import NavBar from '../NavBar/NavBar';
 
 //STYLES

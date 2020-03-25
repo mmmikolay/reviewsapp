@@ -1,6 +1,4 @@
 import React from 'react'
-import { HomeButtonDark } from '../Buttons/HomeButton';
-import NavBar from '../NavBar/NavBar';
 
 //STYLES
 import './about.css';
