@@ -31,7 +31,8 @@ const AuthForm = () => {
                 `
             };
 
-            fetch("http://localhost:4000/graphql", {
+            // fetch("http://localhost:4000/graphql", {
+            fetch(`${process.env.SERVER_URL}/graphql`, {
                 method: "POST",
                 credentials: "include",
                 body: JSON.stringify(requestBody),

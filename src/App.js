@@ -15,7 +15,8 @@ import './index.css';
 
 //APOLLO-CLIENT SETUP
 const httpLink = createHttpLink({ 
-  uri: 'http://localhost:4000/graphql', 
+  // uri: 'http://localhost:4000/graphql',
+  uri:`${process.env.SERVER_URL}/graphql`,
   credentials: 'include' });
 
 const client = new ApolloClient({
