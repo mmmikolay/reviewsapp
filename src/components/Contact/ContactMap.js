@@ -8,10 +8,9 @@ import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 const ContactMap = ({ google }) => {
     const pos = {
-        lat: 41.04208, 
-        lng: 29.07840
+        lat: 41.013577, 
+        lng: 28.981228
     }
-
     return (
     <>
     <div className="map-container">
@@ -20,8 +19,8 @@ const ContactMap = ({ google }) => {
         <Map
             google={google}
             initialCenter={{
-            lat: 41.0425,
-            lng: 29.0786
+            lat: 41.013577,
+            lng: 28.981228
             }}
             disableDefaultUI="false"
             zoom={18}
@@ -30,7 +29,7 @@ const ContactMap = ({ google }) => {
         </Map>
     </div>
     <p className="parag">
-            This is my address. Also my home. It's a relatively tranquil site, that is, in İstanbul's standards of course.
+    Well, I don't actually live in the middle of the Gülhane Park. I just wanted to be able to put some address and a map in this page, but I also wanted to not be an exhibitionist who puts his private phone number and home address in public places. Yes, phone info is also fake, but the mail is a real one.
     </p>
     </div>
 

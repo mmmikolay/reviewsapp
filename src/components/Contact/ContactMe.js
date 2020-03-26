@@ -12,26 +12,25 @@ const ContactMe = () => {
                 <li className = "contact-list--list-item">
                     <h4><strong>Address</strong></h4>
                     <p style={{padding: 0}}>
-                        <a href="https://goo.gl/maps/7YFSZtokUgeySYSE8" target="blank">Altınköy 1, B-2 22</a>                            
+                        <a href="https://goo.gl/maps/oR8ppDjpFNLuoLT38" target="blank">Cankurtaran, 34122</a>                            
                     </p>
                     <p style={{padding: 0}}>
-                        <a href="https://goo.gl/maps/7YFSZtokUgeySYSE8" target="blank">Üsküdar, İstanbul</a>
+                        <a href="https://goo.gl/maps/oR8ppDjpFNLuoLT38" target="blank">Fatih, İstanbul</a>
                     </p>
                 </li>
                 <li className = "contact-list--list-item">
                     <h4><strong>Contact me</strong></h4>
                     <p style={{padding: 0}}>
                         email:
-                        <a href="mailto:tuncerilk@gmail.com">tuncer.ilk@gmail.com</a>                            
+                        <a href="mailto:thereviewsapp@gmail.com">thereviewsapp@gmail.com</a>                            
                     </p>
                     <p style={{padding: 0}}>
                         phone:
-                        <a href="tel:905379647363">+90 537 964 7363</a>
+                        <a href="tel:905575655454">+90 557 565 5454</a>
                     </p>
                 </li>
             </ul>
         </div>
-        
     )
 }
 

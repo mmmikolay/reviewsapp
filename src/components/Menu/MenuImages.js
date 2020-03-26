@@ -39,6 +39,7 @@ export const CircleOutline = ({buttonText}) => {
                 y="0"
                 fillOpacity="0"
                 stroke="transparent"
+                // stroke="#ababab"
                 strokeOpacity="1"
                 strokeWidth="3"
                 opacity="1"
