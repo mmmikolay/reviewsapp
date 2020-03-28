@@ -1,68 +1,52 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# [Reviews App](https://mmmikolay.github.io/reviewsapp/)
 
-In the project directory, you can run:
+A web app for my humble reviews about the things I like.
 
-### `npm start`
+## Site Overview
+The page is divided into two main parts, which themselves are divided into three sub-sections:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Reviews
+Reviews make the main content of the website, and are aligned along the outer one of the two main menu circles. 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+## Personal Info
+This is the inner part of the
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Code Structure
+### Frontend
+You can visit my Reviews App in [Github Pages](https://mmmikolay.github.io/reviewsapp/).
+The code is organized in three main folders:
+#### Pages
+Pages folder holds the different page views in the website. Every page you visit in the website is in actuality a functional component held in a file inside the pages folder. No styling is appliad to the pages aside from configuration of the page layout.
 
-### `npm run build`
+#### Components
+All the reusable elements in the documentation, including buttons, navigation bar or other content that is common for multiple page views in different navigation paths, are in this folder.
+Components are not directly visible by the user, but are always instantiated either by a page, or another component. Almost all the styling is done in components folder.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Queries
+This folder holds the definitions of available GraphQL queries and mutations that a user can make from the frontend to the [server](). Queries and mutations are gathered under separate files to keep the code more organized.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Backend
+All the review data is hold in a MongoDB cluster, which is accessed by an Express GraphQL server I run on [Heroku](https://www.heroku.com/).
+#### Server
+GraphQL server handles the queries and mutations made from the client side. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Awailable Queries are:
+##### Get Items
+This query is used to get Book, Movie and Game lists in the respective pages as well as determining the next and previous items in the details page.
+##### Get Creator
+This query is used for getting the producer of a certain content in the details page of a certain item.
 
-### `npm run eject`
+Available mutations:
+#### Add Item:
+This mutation is used to add an item to a reviews list.
+#### Add Creator:
+This is for adding a producer. An item must always have a creator.
+#### Log In:
+I use a cookie-based JSON Web Token authentication system for user login. This mutation currently works only for me. However, I plan to extend it to enable a general registration system in the future.
+#### Sign Up:
+Sign Up is used for adding a new user to the system. Although being fully functional, it is currently not in use until I feel satisfied with the add-item interface.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## TODOs

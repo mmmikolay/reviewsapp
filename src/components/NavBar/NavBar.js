@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import {HomeButtonDark} from '../Buttons/HomeButton';
 import Cookies from 'js-cookie';
 import { IconContext } from "react-icons";
@@ -10,6 +10,7 @@ import Backdrop from "../SideDrawer/Backdrop";
 import './navbar.css';
 
 const NavBar = () => {
+    let history = useHistory();
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
     let signedIn = Cookies.get("signedin");
 
@@ -28,7 +29,9 @@ const NavBar = () => {
     return (
         <header className="main-navigation">
             <nav className="main-navigation__items">
-                <h2>REVIEWS APP</h2>
+                <div style={{cursor:"pointer"}}onClick={()=>history.push("/")}>
+                    <h2>REVIEWS APP</h2>
+                </div>
             <div className="spacer"></div>
                 <div className="main-navigation__list">
                     <ul>
