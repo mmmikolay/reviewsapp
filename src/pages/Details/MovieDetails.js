@@ -25,6 +25,7 @@ const MovieDetails = () => {
     
     return (
         <>
+        <div className="nav-background" style={{backgroundColor:"#fafafa"}}></div>
         <NavBar />
         {showDetails()}
         </>
