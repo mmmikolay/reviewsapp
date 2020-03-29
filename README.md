@@ -21,7 +21,7 @@ I organized the page code in three main folders.
 
 2. **Components:** All the reusable elements in the documentation, including buttons, navigation bar or other content that is common for multiple page views in different navigation paths, are in this folder. Components are not directly visible by the user, but are always instantiated either by a page, or another component. Almost all the styling is done in components folder.
 
-3. **Queries:** This folder holds the definitions of available GraphQL queries and mutations that a user can make from the frontend to the [server side](). Queries and mutations are gathered under separate files for the sake of sanity and organization.
+3. **Queries:** This folder holds the definitions of available GraphQL queries and mutations that a user can make from the frontend to the [server side](https://github.com/mmmikolay/reviewsapp_server). Queries and mutations are gathered under separate files for the sake of sanity and organization.
 
 ### Backend
 All the review data is held in a MongoDB cluster, which is accessed by an Express GraphQL server I currently run on [Heroku](https://www.heroku.com/). The server handles the queries and mutations made from the client side. 
