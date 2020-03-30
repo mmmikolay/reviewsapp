@@ -48,7 +48,7 @@ const NavBar = () => {
                         <li><NavLink to="/movies">Movies</NavLink></li>
                         <li><NavLink to="/games">Games</NavLink></li>
 
-                        {signedIn && <><li><NavLink to="/add_book">Add Book</NavLink></li>
+                        {signedIn === true && <><li><NavLink to="/add_book">Add Book</NavLink></li>
                         <li><NavLink to="/add_movie">Add Movie</NavLink></li>
                         <li><NavLink to="/add_game">Add Game</NavLink></li>
                         <li><button onClick={() => logoutHandler()}>Log Out</button></li></>}
