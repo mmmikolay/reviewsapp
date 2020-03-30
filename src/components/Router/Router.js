@@ -48,7 +48,7 @@ return null;
 
 const Router = () => {
   const context = useContext(AuthContext);
-  const signedIn = context.success;
+  let signedIn = context.success;
 
   return (
     <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>

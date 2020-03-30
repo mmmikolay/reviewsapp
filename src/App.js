@@ -32,7 +32,10 @@ const App = () => {
   const [success, setSuccess] = useState (false)
   
   const login = () => {
-    setSuccess(Cookies.get("signedin"));
+    if(Cookies.get("signedin")){
+      setSuccess(true);
+    }
+    console.log("login");
   }
   const logout = () => {
     setSuccess(false);
