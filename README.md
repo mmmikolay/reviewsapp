@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 A web app for my humble reviews about the things I like. 
 
+[Link to the website](https://mmmikolay.github.io/reviewsapp/)
+[Server Repo](https://github.com/mmmikolay/reviewsapp_server)
+
 ## Site Overview
 In this page, I put together my reviews about the movies, books and games that I liked. The first thing you will see when you open the [reviews app](https://mmmikolay.github.io/reviewsapp/) will be the [**Main Menu**](https://mmmikolay.github.io/reviewsapp/). Menu is in the shape of two concentric rings. Buttons on the outer links takes you to three main review pages. [**About**](https://mmmikolay.github.io/reviewsapp/about), [**Contact**](https://mmmikolay.github.io/reviewsapp/contact) and [**Thanks**](https://mmmikolay.github.io/reviewsapp/thanks) pages are aligned along the inner circle.
 
