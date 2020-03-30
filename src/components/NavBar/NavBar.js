@@ -16,7 +16,7 @@ const NavBar = () => {
     let history = useHistory();
     const context = useContext(AuthContext);
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
-    let signedIn = Cookies.get("signedin");
+    const signedIn = context.success;
 
     const drawerToggleClickHandler = () => {
         setSideDrawerOpen(prevState => !prevState);
