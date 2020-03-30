@@ -1,6 +1,9 @@
-import React, { useRef } from 'react';
-// import { useHistory } from 'react-router-dom';
-// import Cookies from 'js-cookie';
+import React, { useRef, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import Cookies from 'js-cookie';
+
+//CONTEXT
+import AuthContext from '../../context/auth-context';
 
 //STYLES
 import './authform.css';
@@ -8,7 +11,8 @@ import './authform.css';
 const AuthForm = () => {
     const emailEl = useRef(null);
     const passwordEl = useRef(null);
-    // let history = useHistory();
+    const context = useContext(AuthContext);
+    let history = useHistory();
 
 
     const submitForm = async event => {
@@ -45,9 +49,14 @@ const AuthForm = () => {
                 }
                 return res.json();
             }).then(resData => {
-                if(resData.data.login.success){
+                if(resData.data.login.success === true){
                     document.cookie = 'signedin=true';
-                    // history.push("/admin_panel")
+                    context.login();
+                }
+                return Cookies.get("signedin");
+            }).then(cookie => {
+                if(cookie){
+                    history.push("/admin_panel");
                 }
             }).catch(err => {
                 throw new Error(err)

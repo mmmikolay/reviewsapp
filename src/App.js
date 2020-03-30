@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Cookies from 'js-cookie';
+
 //APOLLO-CLIENT
 import ApolloClient from 'apollo-client';
 import { ApolloProvider } from '@apollo/react-hooks';
@@ -7,6 +9,9 @@ import { InMemoryCache } from 'apollo-cache-inmemory';
 
 // ROUTER
 import Router from './components/Router/Router';
+
+//CONTEXT
+import AuthContext from './context/auth-context';
 
 //STYLES
 import './index.css';
@@ -24,11 +29,27 @@ const client = new ApolloClient({
 })
 
 const App = () => {
+  const [success, setSuccess] = useState (false)
+  
+  const login = () => {
+    setSuccess(Cookies.get("signedin"));
+  }
+  const logout = () => {
+    setSuccess(false);
+    Cookies.remove("signedin")
+  }
+
   return (
       <>
       <div id="max-width-wrapper">
         <ApolloProvider client={client}>
-          <Router />
+          <AuthContext.Provider value={{
+          success,
+          login,
+          logout
+          }}>
+            <Router />  
+          </AuthContext.Provider>
         </ApolloProvider>   
       </div>
       </>

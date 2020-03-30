@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect, useContext } from 'react'
 import {
     BrowserRouter,
     Route,
@@ -6,7 +6,9 @@ import {
     Switch,
     useLocation,
   } from 'react-router-dom';
-import Cookies from 'js-cookie';
+
+//CONTEXT
+import AuthContext from '../../context/auth-context';
 
 import Auth from '../../pages/Admin/Auth';
 import AdminPage from '../../pages/Admin/AdminPage';
@@ -34,6 +36,7 @@ import MainMenu from '../../pages/MainMenu/MainMenu';
 
 
 const ScrollToTop = () => {
+
 const { pathname } = useLocation();
 
 useEffect(() => {
@@ -44,52 +47,52 @@ return null;
 };
 
 const Router = () => {
+  const context = useContext(AuthContext);
+  const signedIn = context.success;
 
-    const signedIn = Cookies.get("signedin");
-
-    return (
-        <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
-        <ScrollToTop />
-        <main>
-          <Switch>
-            <Route path ="/book/details/:itemid" component = {BookDetails}/>
-            <Route path ="/movie/details/:itemid" component = {MovieDetails}/>
-            <Route path ="/game/details/:itemid" component = {GameDetails}/>
+  return (
+    <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+      <ScrollToTop />
+      <main>
+        <Switch>
+          <Route path ="/book/details/:itemid" component = {BookDetails}/>
+          <Route path ="/movie/details/:itemid" component = {MovieDetails}/>
+          <Route path ="/game/details/:itemid" component = {GameDetails}/>
 
 
-            {!signedIn && <Redirect from = "/add_author" to = "/" exact/>}
-            {!signedIn && <Redirect from = "/add_book" to = "/" exact/>}
-            {!signedIn && <Redirect from = "/add_director" to = "/" exact/>}
-            {!signedIn && <Redirect from = "/add_movie" to = "/" exact/>}
-            {!signedIn && <Redirect from = "/add_studio" to = "/" exact/>}
-            {!signedIn && <Redirect from = "/add_game" to = "/" exact/>}
-            {!signedIn && <Redirect from = "/admin_panel" to = "/" exact/>}
+          {!signedIn && <Redirect from = "/add_author" to = "/" exact/>}
+          {!signedIn && <Redirect from = "/add_book" to = "/" exact/>}
+          {!signedIn && <Redirect from = "/add_director" to = "/" exact/>}
+          {!signedIn && <Redirect from = "/add_movie" to = "/" exact/>}
+          {!signedIn && <Redirect from = "/add_studio" to = "/" exact/>}
+          {!signedIn && <Redirect from = "/add_game" to = "/" exact/>}
+          {!signedIn && <Redirect from = "/admin_panel" to = "/" exact/>}
 
-            <Route exact path ="/add_author" component = {AddAuthor}/>
-            <Route exact path ="/add_book" component = {AddBook}/>
-            <Route exact path ="/add_director" component = {AddDirector}/>
-            <Route exact path ="/add_movie" component = {AddMovie}/>
-            <Route exact path ="/add_studio" component = {AddStudio}/>
-            <Route exact path ="/add_game" component = {AddGame}/>
+          <Route exact path ="/add_author" component = {AddAuthor}/>
+          <Route exact path ="/add_book" component = {AddBook}/>
+          <Route exact path ="/add_director" component = {AddDirector}/>
+          <Route exact path ="/add_movie" component = {AddMovie}/>
+          <Route exact path ="/add_studio" component = {AddStudio}/>
+          <Route exact path ="/add_game" component = {AddGame}/>
 
-            <Route exact path ="/books" component = {Books}/>
-            <Route exact path ="/movies" component = {Movies}/>
-            <Route exact path ="/games" component = {Games}/>
+          <Route exact path ="/books" component = {Books}/>
+          <Route exact path ="/movies" component = {Movies}/>
+          <Route exact path ="/games" component = {Games}/>
 
-            <Route exact path ="/about" component = {About}/>            
-            <Route exact path ="/contact" component = {Contact}/>
-            <Route exact path ="/thanks" component = {SpecialThanks}/>
+          <Route exact path ="/about" component = {About}/>            
+          <Route exact path ="/contact" component = {Contact}/>
+          <Route exact path ="/thanks" component = {SpecialThanks}/>
 
-            {signedIn && <Redirect from ="/auth" to="/admin_panel" exact/>}
-            <Route exact path ="/auth" component = {Auth}/>
-            <Route exact path ="/admin_panel" component = {AdminPage}/>
+          {signedIn && <Redirect from ="/auth" to="/admin_panel" exact/>}
+          <Route exact path ="/auth" component = {Auth}/>
+          <Route exact path ="/admin_panel" component = {AdminPage}/>
 
-            <Route exact path="/" component = {MainMenu}></Route>
-            <Redirect to ="404" exact/>
-          </Switch>
-        </main>
-    </BrowserRouter> 
-    )
+          <Route exact path="/" component = {MainMenu}></Route>
+          <Redirect to ="404" exact/>
+        </Switch>
+      </main>
+  </BrowserRouter> 
+  )
 }
 
 export default Router

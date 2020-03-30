@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
 import {HomeButtonDark} from '../Buttons/HomeButton';
 import Cookies from 'js-cookie';
@@ -7,10 +7,14 @@ import { MdMenu } from "react-icons/md";
 import SideDrawer from "../SideDrawer/SideDrawer";
 import Backdrop from "../SideDrawer/Backdrop";
 
+//CONTEXT
+import AuthContext from '../../context/auth-context';
+
 import './navbar.css';
 
 const NavBar = () => {
     let history = useHistory();
+    const context = useContext(AuthContext);
     const [sideDrawerOpen, setSideDrawerOpen] = useState(false);
     let signedIn = Cookies.get("signedin");
 
@@ -19,6 +23,11 @@ const NavBar = () => {
     }
     const backdropClickHandler = () => {
         setSideDrawerOpen(false);
+    }
+
+    const logoutHandler = () => {
+        context.logout();
+        history.push("/");
     }
 
     let backdrop;
@@ -41,7 +50,8 @@ const NavBar = () => {
 
                         {signedIn && <><li><NavLink to="/add_book">Add Book</NavLink></li>
                         <li><NavLink to="/add_movie">Add Movie</NavLink></li>
-                        <li><NavLink to="/add_game">Add Game</NavLink></li></>}
+                        <li><NavLink to="/add_game">Add Game</NavLink></li>
+                        <li><button onClick={() => logoutHandler()}>Log Out</button></li></>}
                     </ul>
                 </div>
                 <div className="nav-button-container">
