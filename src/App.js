@@ -36,7 +36,7 @@ const App = () => {
   }
   const logout = () => {
     setSuccess(false);
-    Cookies.remove("signedin")
+    document.cookie = "signedin= ; expires = Thu, 01 Jan 1970 00:00:00 GMT";
   }
 
   return (
