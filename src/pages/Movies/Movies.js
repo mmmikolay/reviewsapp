@@ -1,12 +1,12 @@
-import React from 'react'
-import WatchList from '../../components/Lists/WatchList';
+import React from "react";
+import WatchList from "../../components/Lists/WatchList";
 
 const Movies = () => {
-    return (
+  return (
     <>
-        <WatchList />
+      <WatchList />
     </>
-    )
-}
+  );
+};
 
-export default Movies
+export default Movies;

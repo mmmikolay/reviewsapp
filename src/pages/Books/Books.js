@@ -1,12 +1,12 @@
-import React from 'react'
-import ReadingList from '../../components/Lists/ReadingList';
+import React from "react";
+import ReadingList from "../../components/Lists/ReadingList";
 
 const Books = () => {
-    return (
+  return (
     <>
-        <ReadingList />
+      <ReadingList />
     </>
-    )
-}
+  );
+};
 
-export default Books
+export default Books;

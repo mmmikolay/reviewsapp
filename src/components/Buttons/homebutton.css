@@ -1,27 +1,27 @@
 .home-button-container {
-    /* position: absolute; */
-    top: 1rem;
-    left: 1rem;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 100;
-    transform: scale(65%);
-    -webkit-transform: scale(0.65);
+  /* position: absolute; */
+  top: 1rem;
+  left: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  transform: scale(65%);
+  -webkit-transform: scale(0.65);
 }
 
 .home-button-container:hover {
-    transform: scale(78%);
-    -webkit-transform: scale(0.78);
+  transform: scale(78%);
+  -webkit-transform: scale(0.78);
 }
 
 .right {
-    left: unset;
-    right: 1em;
+  left: unset;
+  right: 1em;
 }
 
 @media (max-width: 812px) {
-    .home-button-container {
-        left: unset;
-        right: 1em;
-    }
+  .home-button-container {
+    left: unset;
+    right: 1em;
+  }
 }

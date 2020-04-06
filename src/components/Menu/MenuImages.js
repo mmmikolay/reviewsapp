@@ -1,7 +1,6 @@
 import React from "react";
 
-
-export const CircleOutline = ({buttonText}) => {
+export const CircleOutline = ({ buttonText }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -49,17 +48,15 @@ export const CircleOutline = ({buttonText}) => {
           </g>
         </g>
 
-        <text  width="500" >
-        <textPath startOffset="78%" alignmentBaseline="top" xlinkHref="#b">
-          {buttonText}
-        </textPath>
-      </text>
+        <text width="500">
+          <textPath startOffset="78%" alignmentBaseline="top" xlinkHref="#b">
+            {buttonText}
+          </textPath>
+        </text>
       </g>
-
     </svg>
   );
-}
-
+};
 
 export const MenuButton = () => {
   return (
@@ -110,4 +107,4 @@ export const MenuButton = () => {
       </g>
     </svg>
   );
-}
+};

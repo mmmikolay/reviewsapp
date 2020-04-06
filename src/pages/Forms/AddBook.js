@@ -1,14 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import AddBookForm from '../../components/Forms/AddBookForm';
-
+import AddBookForm from "../../components/Forms/AddBookForm";
 
 const AddBook = () => {
-
-    return(
+  return (
     <>
-        <AddBookForm />
+      <AddBookForm />
     </>
-    );
-}
+  );
+};
 export default AddBook;

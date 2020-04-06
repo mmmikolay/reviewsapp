@@ -1,65 +1,61 @@
 .container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--turquoise-darker);
-    color: var(--gray-lightest);
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--turquoise-darker);
+  color: var(--gray-lightest);
 }
 
 .about-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: inherit;
-    justify-content: center;
-    align-items: center;
-
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: inherit;
+  justify-content: center;
+  align-items: center;
 }
 
 .container h1 {
-    color: var(--gray-darkest);
-    text-align: center;
-
+  color: var(--gray-darkest);
+  text-align: center;
 }
 .container p {
-    text-align: center;
-    max-width: 20em;
-    color: var(--gray-lightest);
-    font-size: 20px;
-    margin: 0 auto;
+  text-align: center;
+  max-width: 20em;
+  color: var(--gray-lightest);
+  font-size: 20px;
+  margin: 0 auto;
 }
 
 .container.about-project {
-    background-color: var(--gray-lightest);
+  background-color: var(--gray-lightest);
 }
 
 .container.about-project p {
-    margin: 1rem auto;
-    color: var(--gray-darkest);
-    font-weight: light;
+  margin: 1rem auto;
+  color: var(--gray-darkest);
+  font-weight: light;
 }
 
 .container.about-project p:last-of-type {
-    margin-bottom: 8rem;
+  margin-bottom: 8rem;
 }
 
 .container.about-project a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--turquoise-darker);
-    text-shadow: 0.3px 0.2px var(--gray-dark);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--turquoise-darker);
+  text-shadow: 0.3px 0.2px var(--gray-dark);
 }
-
 
 @media (max-width: 812px) {
-    .container.about-project p {
-        margin: 5rem auto 5rem;
-        font-size: 16px;
-        max-width: 18em;
-    }
+  .container.about-project p {
+    margin: 5rem auto 5rem;
+    font-size: 16px;
+    max-width: 18em;
+  }
 }
-

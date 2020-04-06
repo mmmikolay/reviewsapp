@@ -1,15 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import AddMovieForm from '../../components/Forms/AddMovieForm';
-
+import AddMovieForm from "../../components/Forms/AddMovieForm";
 
 const AddMovie = () => {
-
-    return (
-        <>
-            <AddMovieForm />
-        </>
-    )
-}
+  return (
+    <>
+      <AddMovieForm />
+    </>
+  );
+};
 
 export default AddMovie;

@@ -1,10 +1,8 @@
-import React from 'react'
-import AuthForm from '../../components/Auth/AuthForm';
+import React from "react";
+import AuthForm from "../../components/Auth/AuthForm";
 
 const AdminPanel = () => {
-    return (
-        <AuthForm />
-    )
-}
+  return <AuthForm />;
+};
 
-export default AdminPanel
+export default AdminPanel;

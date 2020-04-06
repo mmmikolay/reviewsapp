@@ -1,22 +1,22 @@
-import React from 'react'
-import NavBar from '../../components/NavBar/NavBar';
+import React from "react";
+import NavBar from "../../components/NavBar/NavBar";
 
 // STYLES
-import './specialthanks.css';
+import "./specialthanks.css";
 
-import PersonsList from '../../components/Thanks/PersonsList';
-import ThanksNote from '../../components/Thanks/ThanksNote';
+import PersonsList from "../../components/Thanks/PersonsList";
+import ThanksNote from "../../components/Thanks/ThanksNote";
 
 const SpecialThanks = () => {
-    return (
+  return (
     <>
-        <div id="thanks">
-            <NavBar/>
-            <ThanksNote />
-            <PersonsList />
-        </div>
+      <div id="thanks">
+        <NavBar />
+        <ThanksNote />
+        <PersonsList />
+      </div>
     </>
-    )
-}
+  );
+};
 
 export default SpecialThanks;

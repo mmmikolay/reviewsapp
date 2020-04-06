@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import AddGameForm from '../../components/Forms/AddGameForm'
-
+import AddGameForm from "../../components/Forms/AddGameForm";
 
 const AddGame = () => {
-    return (
-        <>
-            <AddGameForm />
-        </>
-    )
-}
+  return (
+    <>
+      <AddGameForm />
+    </>
+  );
+};
 
 export default AddGame;

@@ -1,140 +1,138 @@
 :root {
-    --white: #fff;
-    --black: #000;
+  --white: #fff;
+  --black: #000;
 
-    --gray-lightest: #fafafa;
-    --gray-lighter: #d5d5d5;
-    --gray-light: #afafaf;
-    --gray: #8a8a8a;
-    --gray-dark: #646464;
-    --gray-darker: #3f3f3f;
-    --gray-darkest: #191919;
+  --gray-lightest: #fafafa;
+  --gray-lighter: #d5d5d5;
+  --gray-light: #afafaf;
+  --gray: #8a8a8a;
+  --gray-dark: #646464;
+  --gray-darker: #3f3f3f;
+  --gray-darkest: #191919;
 
-    --turquoise-lightest: #9bd4d3;
-    --turquoise-lighter: #50b4b3;
-    --turquoise-light: #2ba4a2;
-    --turquoise: #059492;
-    --turquoise-dark: #047e7c;
-    --turquoise-darker: #046866;
-    --turquoise-darkest: #035150;
+  --turquoise-lightest: #9bd4d3;
+  --turquoise-lighter: #50b4b3;
+  --turquoise-light: #2ba4a2;
+  --turquoise: #059492;
+  --turquoise-dark: #047e7c;
+  --turquoise-darker: #046866;
+  --turquoise-darkest: #035150;
 
-    --red-lightest: #d49b9b;
-    --red-lighter: #c47676;
-    --red-light: #a42b2b;
-    --red: #940505;
-    --red-dark: #7e0404;
-    --red-darker: #680404;
-    --red-darkest: #3b0202;
+  --red-lightest: #d49b9b;
+  --red-lighter: #c47676;
+  --red-light: #a42b2b;
+  --red: #940505;
+  --red-dark: #7e0404;
+  --red-darker: #680404;
+  --red-darkest: #3b0202;
 
-    --pink-lightest: #d59bd8;
-    --pink-lighter: #c676ca;
-    --pink-light: #a72bad;
-    --pink: #97059e;
-    --pink-dark: #800486;
-    --pink-darker: #6a046f;
-    --pink-darkest: #530357;
+  --pink-lightest: #d59bd8;
+  --pink-lighter: #c676ca;
+  --pink-light: #a72bad;
+  --pink: #97059e;
+  --pink-dark: #800486;
+  --pink-darker: #6a046f;
+  --pink-darkest: #530357;
 
-    --purple-lightest: #ece6f3;
-    --purple-lighter: #b29bcf;
-    --purple-light: #9575bc;
-    --purple: #784faa;
-    --purple-dark: #5b2a98;
-    --purple-darker: #3e0486;
-    --purple-darkest: #350372;
+  --purple-lightest: #ece6f3;
+  --purple-lighter: #b29bcf;
+  --purple-light: #9575bc;
+  --purple: #784faa;
+  --purple-dark: #5b2a98;
+  --purple-darker: #3e0486;
+  --purple-darkest: #350372;
 
-    --green-lightest: #c3e7c1;
-    --green-lighter: #7aca76;
-    --green-light: #56bb50;
-    --green: #31ad2b;
-    --green-dark: #0b8604;
-    --green-darker: #096f04;
-    --green-darkest: #075703;
+  --green-lightest: #c3e7c1;
+  --green-lighter: #7aca76;
+  --green-light: #56bb50;
+  --green: #31ad2b;
+  --green-dark: #0b8604;
+  --green-darker: #096f04;
+  --green-darkest: #075703;
 
-    --blue-lightest: #c0c8fc;
-    --blue-lighter: #9aa7fa;
-    --blue-light: #4e64f6;
-    --blue: #2843f4;
-    --blue-dark: #0222f2;
-    --blue-darker: #021dce;
-    --blue-darkest: #0118a9;
+  --blue-lightest: #c0c8fc;
+  --blue-lighter: #9aa7fa;
+  --blue-light: #4e64f6;
+  --blue: #2843f4;
+  --blue-dark: #0222f2;
+  --blue-darker: #021dce;
+  --blue-darkest: #0118a9;
 
-    --yellow-lightest: #fbf1c1;
-    --yellow-lighter: #f8e99c;
-    --yellow-light: #f5e077;
-    --yellow: #f2d851;
-    --yellow-dark: #f0cf2c;
-    --yellow-darker: #edc707;
-    --yellow-darkest: #c9a906;
+  --yellow-lightest: #fbf1c1;
+  --yellow-lighter: #f8e99c;
+  --yellow-light: #f5e077;
+  --yellow: #f2d851;
+  --yellow-dark: #f0cf2c;
+  --yellow-darker: #edc707;
+  --yellow-darkest: #c9a906;
 
-    --orange-lightest: #f7ece6;
-    --orange-lighter: #ebd0c1;
-    --orange-light: #deb49b;
-    --orange: #c67b50;
-    --orange-dark: #b95f2b;
-    --orange-darker: #ad4305;
-    --orange-darkest: #792f04;
+  --orange-lightest: #f7ece6;
+  --orange-lighter: #ebd0c1;
+  --orange-light: #deb49b;
+  --orange: #c67b50;
+  --orange-dark: #b95f2b;
+  --orange-darker: #ad4305;
+  --orange-darkest: #792f04;
 
-    --navbar-height: 4.2rem;
-    --max-width: 2400px;
+  --navbar-height: 4.2rem;
+  --max-width: 2400px;
 }
 html {
-    height: 100%;
+  height: 100%;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
-    background: var(--gray-lightest);
-    height: 100%;
-    font-family: 'Roboto Condensed', cursive;
+body {
+  margin: 0px;
+  padding: 0px;
+  background: var(--gray-lightest);
+  height: 100%;
+  font-family: "Roboto Condensed", cursive;
 }
 
 #root {
-    height: 100%;
+  height: 100%;
 }
 
 main {
-    height: 100%;
+  height: 100%;
 }
 
-form input, form select {
-    margin:  0px 10px 10px;
-    padding: 6px;
-    box-sizing: border-box;
-    float: left;
-    border-radius: 6px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+form input,
+form select {
+  margin: 0px 10px 10px;
+  padding: 6px;
+  box-sizing: border-box;
+  float: left;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
-
-
 
 button {
-    color: var(--gray-lightest);
-    background: var(--blue-light);
-    cursor: pointer;
-    border:0;
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  color: var(--gray-lightest);
+  background: var(--blue-light);
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
-    transform: scale(106%);
-    -webkit-transform: scale(1.06);
-
+  transform: scale(106%);
+  -webkit-transform: scale(1.06);
 }
 
 #max-width-wrapper {
-    height: 100%;
-    max-width: var(--max-width);
-    margin: 0 auto;
+  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .nav-background {
-    background-color: inherit;
-    min-height: var(--navbar-height);
-    height: var(--navbar-height);
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  background-color: inherit;
+  min-height: var(--navbar-height);
+  height: var(--navbar-height);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }

@@ -1,65 +1,65 @@
 .main-navigation {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-left: 0;
-    height: var(--navbar-height);
-    max-width: var(--max-width);
-    background: inherit;
-    padding: 0;
-    z-index: 500;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: 0;
+  height: var(--navbar-height);
+  max-width: var(--max-width);
+  background: inherit;
+  padding: 0;
+  z-index: 500;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .main-navigation__items {
-    margin:0 0 0 0.2rem ;
-    padding:0 1rem;
-    display: flex;
-    align-items: center;
-    height: 100%;
+  margin: 0 0 0 0.2rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 .spacer {
-    flex: 1;
-    height: 100%;
+  flex: 1;
+  height: 100%;
 }
 
 .main-navigation__list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .main-navigation__items li {
-    margin: 0 1rem;
-    padding: 0;
+  margin: 0 1rem;
+  padding: 0;
 }
 
 .main-navigation__items h2 {
-    color: inherit;
-    font-size: 1.8rem;
-    margin: 0;
-    padding: 0;
+  color: inherit;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
 }
 
-.main-navigation__list a, 
+.main-navigation__list a,
 .main-navigation__list button {
-    text-decoration: none;
-    color: inherit;
-    padding: 0.25rem 0.5rem;
-    border: none;
-    font-size: 1.2rem;
-    font-weight: lighter;
-    background: transparent;
-    cursor: pointer;
-    margin: 0;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  background: transparent;
+  cursor: pointer;
+  margin: 0;
 }
 
 .main-navigation__list button {
-    border-radius: unset;
-    box-shadow: unset;
+  border-radius: unset;
+  box-shadow: unset;
 }
 
 .main-navigation__list button:hover,
@@ -67,22 +67,22 @@
 .main-navigation__list a:hover,
 .main-navigation__list a:active,
 .main-navigation__lista.active {
-    color: var(--orange-dark);
+  color: var(--orange-dark);
 }
 
 .mobile-menu {
-    display: none;
+  display: none;
 }
 
-@media (max-width:740px){
-    .main-navigation__list {
-        display: none;
-    }
+@media (max-width: 740px) {
+  .main-navigation__list {
+    display: none;
+  }
 
-    .nav-button-container {
-        display: none;
-    }
-    .mobile-menu {
-        display: unset;
-    }
+  .nav-button-container {
+    display: none;
+  }
+  .mobile-menu {
+    display: unset;
+  }
 }

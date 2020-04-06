@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import AddStudioForm from '../../components/Forms/AddStudioForm'
-
+import AddStudioForm from "../../components/Forms/AddStudioForm";
 
 const AddStudio = () => {
-    return (
-        <>
-            <AddStudioForm />
-        </>
-    )
-}
+  return (
+    <>
+      <AddStudioForm />
+    </>
+  );
+};
 
 export default AddStudio;

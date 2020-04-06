@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import AddDirectorForm from '../../components/Forms/AddDirectorForm';
-
+import AddDirectorForm from "../../components/Forms/AddDirectorForm";
 
 const AddDirector = () => {
-    return (
-        <>
-            <AddDirectorForm />
-        </>
-    )
-}
+  return (
+    <>
+      <AddDirectorForm />
+    </>
+  );
+};
 
 export default AddDirector;

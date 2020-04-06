@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import AddAuthorForm from '../../components/Forms/AddAuthorForm'
-
+import AddAuthorForm from "../../components/Forms/AddAuthorForm";
 
 const AddAuthor = () => {
-    return (
-        <>
-            <AddAuthorForm/>
-        </>
-    )
-}
+  return (
+    <>
+      <AddAuthorForm />
+    </>
+  );
+};
 
 export default AddAuthor;
